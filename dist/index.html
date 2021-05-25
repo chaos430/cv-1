@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的简历</title>
+    <style>#page>svg {
+            display: none;
+        }
+        
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        
+        body {
+            margin: 0;
+            font: 14px/1.5 Arial;
+            color: #666;
+        }
+        
+        .layout {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        #page {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        header {
+            background: #3c3c3c;
+            width: 100%;
+            text-align: center;
+            padding: 60px 0 10px 0;
+            color: #fff;
+        }
+        
+        header>h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+        
+        header>p {
+            font-size: 18px;
+            color: #aaa;
+            margin-top: 4px;
+        }
+        
+        aside {
+            width: 240px;
+            border-right: 1px solid #ccc;
+            position: relative;
+            padding-top: 100px;
+        }
+        
+        aside .avatar {
+            text-align: center;
+            position: absolute;
+            top: -60px;
+            width: 100%;
+        }
+        
+        aside .avatar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        
+        section {
+            border-bottom: 2px solid #ccc;
+            margin: 30px 10px 0 20px;
+            padding-bottom: 20px;
+        }
+        
+        section:last-child {
+            border-bottom: 0;
+        }
+        
+        section h2 {
+            color: #5c99ca;
+            font-size: 16px;
+        }
+        
+        .personal .item span:first-child {
+            display: inline-block;
+            width: 80px;
+        }
+        
+        .personal .item span:last-child::before {
+            content: ':';
+            margin-right: 10px;
+        }
+        
+        .skills .item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .skills .keyword {
+            width: 80px;
+        }
+        
+        .skills .rule {
+            flex: 1;
+            height: 4px;
+            background: #ccc;
+        }
+        
+        .skills .rule i {
+            display: block;
+            width: 10%;
+            height: 4px;
+            background: #000;
+        }
+        
+        .contact .item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact svg {
+            width: 25px;
+            height: 25px;
+        }
+        
+        .contact .item span {
+            margin-left: 15px;
+        }
+        
+        .blog .item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .blog .item span a {
+            margin-left: 20px;
+        }
+        
+        main {
+            flex: 1;
+            min-height: calc(100vh - 100px);
+        }
+        
+        @media (max-width: 768px) {
+            aside {
+                width: 100%;
+            }
+        }
+</style>
+</head>
+
+<body>
+    <div class="layout" id="page">
+        <svg><symbol id="icon-city" viewbox="0 0 1024 1024"><path d="M510.279822 63.620993c-171.411975 0-310.355467 135.772266-310.355467 303.290561 0 167.495782 207.317743 389.553227 310.355467 592.102363 107.445104-202.549136 310.355467-424.605557 310.355467-592.102363C820.635289 199.393259 681.691797 63.620993 510.279822 63.620993L510.279822 63.620993zM510.279822 539.898397c-96.41898 0-174.578084-76.725452-174.578084-171.451884 0-94.692662 78.159104-171.457 174.578084-171.457 96.413863 0 174.578084 76.765361 174.578084 171.457C684.856883 463.172945 606.692662 539.898397 510.279822 539.898397L510.279822 539.898397zM510.279822 292.252157c-42.863227 0-77.600379 34.122145-77.600379 76.19538 0 42.095747 34.737152 76.200496 77.600379 76.200496 42.840714 0 77.577866-34.104749 77.577866-76.200496C587.856665 326.374302 553.119513 292.252157 510.279822 292.252157L510.279822 292.252157zM510.279822 292.252157"></path></symbol><symbol id="icon-phone" viewbox="0 0 1024 1024"><path d="M855.578 697.356l-139.143-79.485a32.777 32.777 0 0 0-38.249 4.157L612.3 681.649c-10.039 9.085-24.635 11.094-36.715 4.981-51.281-25.947-184.756-104.183-236.667-237.517-4.297-11.039-2.451-23.533 5.003-32.74l46.928-57.968a32.777 32.777 0 0 0 5.611-31.014l-53.098-158.828a32.777 32.777 0 0 0-28.324-22.267l-46.782-3.955c-6.975-0.59-13.945 1.039-19.9 4.718-32.982 20.376-135.197 97.54-83.874 246.358C225.24 569.593 426.29 876.041 739.585 866.345c0 0 129.075-21.639 132.519-139.779 0.352-12.022-6.082-23.244-16.526-29.21z"></path></symbol><symbol id="icon-email" viewbox="0 0 1024 1024"><path d="M117.76 191.488c53.248 63.488 114.688 120.832 181.248 171.008 64.512 48.128 136.192 91.136 212.992 126.976 71.68-31.744 143.36-74.752 212.992-126.976 72.704-54.272 133.12-111.616 180.224-171.008 5.12-5.12-256-37.888-393.216-37.888s-398.336 31.744-394.24 37.888zM929.792 186.368c1.024 0 1.024 0 0 0 1.024 0 1.024 0 0 0zM935.936 190.464s0-1.024 0 0c0-1.024 0 0 0 0zM83.968 195.584c1.024-1.024 1.024-1.024 0 0 1.024-1.024 1.024-1.024 0 0zM940.032 194.56c-1.024 0-1.024 0 0 0-1.024 0-1.024 0 0 0z"></path><path d="M937.984 218.112c-49.152 61.44-112.64 120.832-188.416 177.152-74.752 56.32-152.576 101.376-229.376 135.168-3.072 1.024-5.12 2.048-8.192 2.048s-6.144-1.024-8.192-2.048c-82.944-37.888-159.744-83.968-229.376-135.168C204.8 343.04 142.336 283.648 87.04 218.112 82.944 212.992 51.2 408.576 51.2 512s10.24 207.872 30.72 311.296c2.048 8.192 8.192 15.36 17.408 16.384 137.216 20.48 275.456 30.72 412.672 30.72s275.456-10.24 412.672-30.72c8.192-1.024 15.36-8.192 17.408-16.384 20.48-103.424 30.72-207.872 30.72-311.296s-30.72-299.008-34.816-293.888z"></path></symbol><symbol id="icon-wechat" viewbox="0 0 1193 1024"><path d="M806.052074 309.710659c13.950931 0 27.901861 0.930062 40.92273 2.790186C809.772322 133.928934 629.340286 0.930062 421.936451 0.930062 190.351003 0.930062 1.548409 167.411167 1.548409 378.53525c0 120.908065 62.314157 221.354765 167.411167 299.479977l-41.852791 132.998872L274.986649 734.749011c52.083474 11.160744 94.866328 22.321489 146.949802 22.321489 13.020869 0 26.971799 0 39.062606-1.860124a353.423575 353.423575 0 0 1 344.122955-444.569655zM580.046998 189.732656c31.622109 0 53.013536 22.321489 53.013536 55.803723 0 32.552171-21.391427 55.803722-53.013536 55.803722-31.622109 0-63.244219-23.251551-63.244219-55.803722 0-33.482233 31.622109-55.803722 63.244219-55.803723z m-294.829667 111.607445c-31.622109 0-63.244219-23.251551-63.244218-55.803722 0-33.482233 31.622109-55.803722 63.244218-55.803723s53.013536 22.321489 53.013537 55.803723c0 32.552171-21.391427 55.803722-53.013537 55.803722z"></path><path d="M1191.097758 655.693738c0-176.711788-169.271291-321.801466-358.073885-321.801466C633.060534 333.892272 474.949988 478.051888 474.949988 655.693738s158.110547 321.801466 358.073885 321.801466c41.852792 0 83.705584-11.160744 126.488437-22.321489l115.327693 66.964467-31.622109-111.607445c83.705584-65.104343 146.949802-154.390299 146.949802-254.836999z m-474.33164-55.803722c-20.461365 0-41.852792-21.391427-41.852792-43.712916 0-22.321489 21.391427-44.642978 41.852792-44.642978 31.622109 0 53.013536 22.321489 53.013536 44.642978s-21.391427 44.642978-53.013536 44.642978z m232.51551 0c-21.391427 0-42.782854-21.391427-42.782854-43.712916 0-22.321489 21.391427-44.642978 41.852792-44.642978 31.622109 0 53.013536 22.321489 53.013536 44.642978s-21.391427 44.642978-53.013536 44.642978z"></path></symbol></svg>
+        <header>
+            <h1>曹骏</h1>
+            <p>前端工程师</p>
+        </header>
+
+        <aside>
+            <div class="avatar">
+                <img src="jun.2ab9fce8.png" alt="曹骏">
+
+            </div>
+            <section>
+                <h2>
+                    个人信息
+                </h2>
+                <div class="detail personal">
+                    <div class="item">
+                        <div class="label">
+                            <span>学历</span>
+                            <span>本科</span>
+                        </div>
+                        <div class="label">
+                            <span>年龄</span>
+                            <span>28</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <section>
+
+                <h2>
+                    专业技能
+                </h2>
+                <div class="detail skills">
+                    <div class="item">
+
+                        <span class="keyword">HTML5</span>
+                        <span class="rule"><i style="width: 80%;
+"></i></span>
+
+                    </div>
+                    <div class="item">
+
+                        <span class="keyword">CSS3</span>
+                        <span class="rule"><i style="width: 80%;
+"></i></span>
+                    </div>
+                    <div class="item">
+                        <span class="keyword">javascript</span>
+                        <span class="rule"><i style="width: 70%;
+"></i></span>
+                    </div>
+                    <div class="item">
+                        <span class="keyword">vue</span>
+                        <span class="rule"><i style="width: 75%;
+"></i></span>
+                    </div>
+                    <div class="item">
+                        <span class="keyword">node.js</span>
+                        <span class="rule"><i style="width: 60%;
+"></i></span>
+                    </div>
+                </div>
+
+
+            </section>
+            <section>
+                <h2>
+                    其他链接
+                </h2>
+                <div class="detail blog">
+                    <div class="item">
+
+                        <span>掘金</span>
+                        <span><a href="https://juejin.cn/user/1830024854116382">已总结20余篇博客</a></span>
+                    </div>
+                    <div class="item">
+                        <span>Github</span>
+                        <span><a href="https://github.com/chaos430">项目展示</a></span>
+                    </div>
+
+                </div>
+
+
+            </section>
+            <section>
+                <h2>语言水平</h2>
+                <p>CET6&nbsp;&nbsp;能流畅阅读英文专业书籍、文档及其他资料 可无字幕观看 MOOC 课程、开发者大会视频 能够在英文邮件列表、Stack Overflow 等社区正常交流</p>
+            </section>
+            <section>
+                <h2>
+                    联系方式
+                </h2>
+                <div class="detail contact">
+
+                    <div class="item">
+                        <svg class="icon"><use xlink:href="#icon-phone"></use></svg>
+                        <span>18020235326</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon"><use xlink:href="#icon-email"></use></svg>
+                        <span>1192318530@qq.com</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon"><use xlink:href="#icon-wechat"></use></svg>
+                        <span>caojun999666</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon"><use xlink:href="#icon-city"></use></svg>
+                        <span>苏州</span>
+                    </div>
+                </div>
+
+
+            </section>
+        </aside>
+        <main>
+            <section>
+                <h2>技术栈</h2>
+                <p>熟悉页面制作技巧，能将设计稿完美还原</p>
+                <p>熟练掌握 Vue全家桶的使用，包括 VueCli、VueRouter、Vuex 等</p>
+                <p>熟悉前后端分离技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</p>
+                <p>熟悉 ES6，包括 let / Promise / await / 析构赋值 了解 TypeScript 的使用，了解 Webpack 的配置和优化</p>
+            </section>
+            <section>
+                <h2>项目经历</h2>
+                <strong>LEMON UI</strong>
+                <ul>
+                    <li>一款基于 Vue/ TypeScript 的简易UI库</li>
+                    <li>主要组件有Button,Dialog,Switch,Tab等,适配手机端,方便用户预览</li>
+                    <li>技术栈：vite,Vue3,vueRouter,TypeScript,scss等</li>
+                    <li><a href="https://github.com/chaos430/lemon-ui-website">Github源码链接</a>&nbsp;&nbsp;&nbsp;<a href="https://chaos430.github.io/lemon-ui-website/index.html#/">项目预览</a></li>
+                </ul>
+
+                <strong>
+                    自己写的DOM库
+                </strong>
+                <ul>
+
+                    <li>实现了元素获取、元素创建、元素遍历、设置样式等常见功能</li>
+                    <li><a href="https://github.com/chaos430/dom-1">源码链接</a></li>
+                </ul>
+                <strong>卡通人物</strong>
+                <ul>
+                    <li>在学习CSS3和动画时制作的一个可爱作品</li>
+                    <li>
+                        <a href="https://github.com/chaos430/pikachu">Github源码链接</a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://chaos430.github.io/pikachu/dist/index.html">预览链接</a>
+                    </li>
+                </ul>
+
+            </section>
+            <section>
+                <h2>教育经历</h2>
+                <p>2012-2016年在南京信息工程大学取得全日制本科学历,主修电气工程与自动化</p>
+            </section>
+            <section>
+                <h2>工作经历</h2>
+                <p>张家港市第一人民医院信息科从事弱电工程师至今</p>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
