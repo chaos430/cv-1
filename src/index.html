@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的简历</title>
     <style>
+        a{
+            color:#666;
+        }
         #page>svg {
             display: none;
         }
@@ -143,7 +146,15 @@
         .blog .item span a {
             margin-left: 20px;
         }
-        
+        .project {
+            position: relative;
+        }
+
+        .qrCode{
+            position: absolute;
+            top: 35px;
+            right: 0;
+        }
         main {
             flex: 1;
             min-height: calc(100vh - 100px);
@@ -252,19 +263,19 @@
                 <div class="detail contact">
 
                     <div class="item">
-                        <svg class="icon"><use xlink:href="#icon-phone"/></use></svg>
+                        <svg class="icon" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-phone"/></use></svg>
                         <span>18020235326</span>
                     </div>
                     <div class="item">
-                        <svg class="icon"><use xlink:href="#icon-email"/></use></svg>
+                        <svg class="icon" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-email"/></use></svg>
                         <span>1192318530@qq.com</span>
                     </div>
                     <div class="item">
-                        <svg class="icon"><use xlink:href="#icon-wechat"/></use></svg>
+                        <svg class="icon" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-wechat"/></use></svg>
                         <span>caojun999666</span>
                     </div>
                     <div class="item">
-                        <svg class="icon"><use xlink:href="#icon-city"/></use></svg>
+                        <svg class="icon" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-city"/></use></svg>
                         <span>苏州</span>
                     </div>
                 </div>
@@ -277,11 +288,25 @@
                 <h2>技术栈</h2>
                 <p>熟悉页面制作技巧，能将设计稿完美还原</p>
                 <p>熟练掌握 Vue全家桶的使用，包括 VueCli、VueRouter、Vuex 等</p>
-                <p>熟悉前后端分离技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</p>
+                <p>熟悉前后端分离技术，包括 AJAX、跨域、前端路由、Cookie、Session 、localstorage等</p>
                 <p>熟悉 ES6，包括 let / Promise / await / 析构赋值 了解 TypeScript 的使用，了解 Webpack 的配置和优化</p>
             </section>
             <section>
                 <h2>项目经历</h2>
+                <div class="project">
+
+
+
+                <strong>LEMON 记账</strong>
+                <ul>
+                    <li>lemon记账是一个简易的的记账移动端网页应用</li>
+                    <li>使用vue/vuex/vueRouter/Typescript/Echarts进行开发</li>
+                    <li>运用表驱动编程，模块化开发思想</li>
+                    <li><a href="https://chaos430.github.io/lemoney-website-2/">Github预览</a></li>
+                </ul>
+                <div class="qrCode"><img style="width: 64px;height: 64px" src="images/lemoney.png" alt=""></div>
+                </div>
+                <div class="project">
                 <strong>LEMON UI</strong>
                 <ul>
                     <li>一款基于 Vue/ TypeScript 的简易UI库</li>
@@ -289,7 +314,9 @@
                     <li>技术栈：vite,Vue3,vueRouter,TypeScript,scss等</li>
                     <li><a href="https://github.com/chaos430/lemon-ui-website">Github源码链接</a>&nbsp;&nbsp;&nbsp;<a href="https://chaos430.github.io/lemon-ui-website/index.html#/">项目预览</a></li>
                 </ul>
-
+                <div class="qrCode"><img style="width: 64px;height: 64px" src="images/lemonui.png" alt=""></div>
+                </div>
+                <div class="project">
                 <strong>
                     自己写的DOM库
                 </strong>
@@ -298,6 +325,8 @@
                     <li>实现了元素获取、元素创建、元素遍历、设置样式等常见功能</li>
                     <li><a href="https://github.com/chaos430/dom-1">源码链接</a></li>
                 </ul>
+                </div>
+                <div class="project">
                 <strong>卡通人物</strong>
                 <ul>
                     <li>在学习CSS3和动画时制作的一个可爱作品</li>
@@ -306,7 +335,9 @@
                         <a href="https://chaos430.github.io/pikachu/dist/index.html">预览链接</a>
                     </li>
                 </ul>
+                    <div class="qrCode"><img style="width: 64px;height: 64px" src="images/pika.png" alt=""></div>
 
+                </div>
             </section>
             <section>
                 <h2>教育经历</h2>
